@@ -168,3 +168,29 @@ main section.todas-receitas h2 {
     font-size: 55px;
     color: #FFA000;
     text-transform: lowercase;
+}
+
+/*  RECEITA */
+
+main section.receita {
+    width: 592px;
+    margin: 50px;
+
+}
+
+main section.receita .titulo h1 {
+    color: #FFA000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    ;
+    color: green;
+
+}
