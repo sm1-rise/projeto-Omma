@@ -77,23 +77,21 @@ function exibirReceita() {
     });
 }
 
+
 const removerReceita = (tituloReceita) => {
-    const index = -1;
     index = receitas.findIndex(receitas => receitas.titulo === tituloReceita);
     if (index !== -1) {
-        receitas.pop(index);
-        console = "Receita removida"
+        receitas.slice(index, 1);
+        console.log = ("Receita removida");
     }
-
     else {
-        console.log("Receita não encontrada")
+        console.log("Receita não encontrada");
     }
 }
 
 
 exibirReceita();
 
-removerReceita("Misto Quente");
+removerReceita("Tabule");
 
-
-
+exibirReceita();
