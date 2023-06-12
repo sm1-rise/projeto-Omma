@@ -78,14 +78,22 @@ function exibirReceita() {
 }
 
 const removerReceita = (tituloReceita) => {
-    receitas.filter(tituloReceita => receita.titulo.indexOf)
-    console.log(tituloReceita.indexOf);
+    const index = -1;
+    index = receitas.findIndex(receitas => receitas.titulo === tituloReceita);
+    if (index !== -1) {
+        receitas.pop(index);
+        console = "Receita removida"
+    }
+
+    else {
+        console.log("Receita não encontrada")
+    }
 }
 
 
 exibirReceita();
-removerReceita("Misto Quente");
 
+removerReceita("Misto Quente");
 
 
 
